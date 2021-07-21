@@ -100,15 +100,13 @@
         ></feeling>
         <progress-bar ref="progressBar" class="progress"
             v-bind:opacity="config.progress.opacity"
+            v-bind:slots="config.progress.slots"
             v-bind:donecolorbg="config.progress.donecolorbg"
             v-bind:donecolorfg="config.progress.donecolorfg"
             v-bind:currcolorbg="config.progress.currcolorbg"
             v-bind:currcolorfg="config.progress.currcolorfg"
             v-bind:todocolorbg="config.progress.todocolorbg"
             v-bind:todocolorfg="config.progress.todocolorfg"
-            v-bind:breakcolorbg="config.progress.breakcolorbg"
-            v-bind:breakcolorfg="config.progress.breakcolorfg"
-            v-bind:slotlist="config.agenda.slots"
         ></progress-bar>
         <banner
             v-for="banner in config.banner.banner"
@@ -291,10 +289,9 @@ body {
     }
     > .agenda {
         position: absolute;
-        top: 30px;
+        top: 280px;
         left: 30px;
         width: auto;
-        height: calc(100% - 150px);
     }
     > .closure {
         position: absolute;

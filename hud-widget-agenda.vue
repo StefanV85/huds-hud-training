@@ -178,7 +178,8 @@ module.exports = {
         let height = Math.ceil(this.$el.clientHeight / slots.length)
         if (height > 50)
             height = 50
-        this.slotheight = height + "px"
+        // this.slotheight = height + "px"
+        this.slotheight = 50 + "px"
     }
 }
 </script>
